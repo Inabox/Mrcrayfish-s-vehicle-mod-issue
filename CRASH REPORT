@@ -1,0 +1,205 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 12/6/20 3:35 PM
+Description: Initializing game
+
+java.lang.VerifyError: Bad local variable type
+Exception Details:
+  Location:
+    net/minecraft/client/renderer/entity/LivingRenderer.func_225623_a_(Lnet/minecraft/entity/LivingEntity;FFLcom/mojang/blaze3d/matrix/MatrixStack;Lnet/minecraft/client/renderer/IRenderTypeBuffer;I)V @755: fload
+  Reason:
+    Type integer (current frame, locals[14]) is not assignable to float
+  Current Frame:
+    bci: @755
+    flags: { }
+    locals: { 'net/minecraft/client/renderer/entity/LivingRenderer', 'net/minecraft/entity/LivingEntity', float, float, 'com/mojang/blaze3d/matrix/MatrixStack', 'net/minecraft/client/renderer/IRenderTypeBuffer', integer, float, float, float, float, float, float, float, integer, 'net/minecraft/client/Minecraft', integer, integer, integer, 'net/minecraft/client/renderer/RenderType', 'com/mojang/blaze3d/vertex/IVertexBuilder', float, integer }
+    stack: { 'net/minecraft/client/renderer/entity/model/EntityModel', 'com/mojang/blaze3d/matrix/MatrixStack', 'com/mojang/blaze3d/vertex/IVertexBuilder', integer, integer, float, float, float, float, 'net/minecraft/entity/LivingEntity' }
+  Bytecode:
+    0x0000000: b200 54b6 005a 9900 33b2 0054 1006 bd00
+    0x0000010: 5c59 032b 5359 042a 5359 0525 b800 6253
+    0x0000020: 5906 1904 5359 0719 0553 5908 1506 b800
+    0x0000030: 6753 b800 6b99 0004 b1b2 006d 9900 082b
+    0x0000040: 0cb5 0072 1904 b600 782a b400 322a 2b25
+    0x0000050: b600 7cb5 0081 2ab4 0032 2bb6 0084 b500
+    0x0000060: 87b2 008b b600 8e99 002e 2ab4 0032 2bb6
+    0x0000070: 0084 9900 1f2b b600 92c6 0018 2bb6 0092
+    0x0000080: b200 8b03 bd00 5cb8 0096 9900 0704 a700
+    0x0000090: 0403 b500 872a b400 322b b600 99b5 009c
+    0x00000a0: 252b b400 9f2b b400 a2b8 00a8 3807 252b
+    0x00000b0: b400 ab2b b400 aeb8 00a8 3808 1708 1707
+    0x00000c0: 6638 092a b400 32b4 0087 9900 6f2b b600
+    0x00000d0: 92c1 006f 9900 652b b600 92c0 006f 3a0a
+    0x00000e0: 2519 0ab4 009f 190a b400 a2b8 00a8 3807
+    0x00000f0: 1708 1707 6638 0917 09b8 00b2 380b 170b
+    0x0000100: 12b3 969c 0007 12b3 380b 170b 12b4 959b
+    0x0000110: 0007 12b4 380b 1708 170b 6638 0717 0b17
+    0x0000120: 0b6a 12b5 959e 000d 1707 170b 12b6 6a62
+    0x0000130: 3807 1708 1707 6638 0925 2bb4 00b9 2bb4
+    0x0000140: 00bc b800 bf38 0a2b b600 c3b2 00c9 a600
+    0x0000150: 362b b600 cd3a 0b19 0bc6 002b 2bb2 00d0
+    0x0000160: b600 d412 d566 380c 1904 190b b600 db74
+    0x0000170: 8617 0c6a 8d0e 190b b600 de74 8617 0c6a
+    0x0000180: 8db6 00e2 2a2b 25b6 00e5 380b 2a2b 1904
+    0x0000190: 170b 1707 25b6 00e9 1904 12ea 12ea 0cb6
+    0x00001a0: 00ee 2a2b 1904 25b6 00f2 1904 0e14 00f3
+    0x00001b0: 0eb6 00e2 0b38 0c0b 380d 2bb6 0084 9a00
+    0x00001c0: 3f2b b600 f799 0038 252b b400 fa2b b400
+    0x00001d0: 72b8 00bf 380c 2bb4 00fd 2bb4 0072 0c25
+    0x00001e0: 666a 6638 0d2b b600 9999 000a 170d 12fe
+    0x00001f0: 6a38 0d17 0c0c 959e 0006 0c38 0c2a b400
+    0x0000200: 322b 170d 170c 25b6 0102 2ab4 0032 2b17
+    0x0000210: 0d17 0c17 0b17 0917 0ab6 0106 b801 0b99
+    0x0000220: 002b 2a2b b501 0d2a 170d b501 0f2a 170c
+    0x0000230: b501 112a 170b b501 132a 1709 b501 152a
+    0x0000240: 170a b501 172a 25b5 0119 b801 1e36 0eb8
+    0x0000250: 0124 3a0f 2a2b b601 2836 1015 109a 0013
+    0x0000260: 2b19 0fb4 012c b601 309a 0007 04a7 0004
+    0x0000270: 0336 1119 0f2b b601 3436 122a 2b15 1015
+    0x0000280: 1115 12b6 0138 3a13 1913 c600 7619 0519
+    0x0000290: 13b9 013e 0200 3a14 2a2b 25b6 0141 3815
+    0x00002a0: 150e 9900 2d2b b401 459d 000a 2bb4 0148
+    0x00002b0: 9e00 0c0c 0b0b 1301 49b8 014f 1715 0b95
+    0x00002c0: 9e00 0f17 1517 1517 1513 0150 b801 4f2b
+    0x00002d0: 1715 b801 5436 162a b400 3219 0419 1415
+    0x00002e0: 0615 160c 0c0c 1511 9900 0913 0155 a700
+    0x00002f0: 040c 2b17 0e17 0d17 0c17 0a17 0bb8 015b
+    0x0000300: 2bb6 015e 9a00 3e2a b400 30b9 0162 0100
+    0x0000310: 3a14 1914 b901 6701 0099 0029 1914 b901
+    0x0000320: 6b01 00c0 016d 3a15 1915 1904 1905 1506
+    0x0000330: 2b17 0d17 0c25 170b 1709 170a b601 71a7
+    0x0000340: ffd3 b801 1e99 000a 0b0b 0b0b b801 4fb8
+    0x0000350: 010b 9900 082a 01b5 010d 1904 b601 742a
+    0x0000360: 2b24 2519 0419 0515 06b7 0177 b201 7ab6
+    0x0000370: 005a 9900 30b2 017a 1006 bd00 5c59 032b
+    0x0000380: 5359 042a 5359 0525 b800 6253 5906 1904
+    0x0000390: 5359 0719 0553 5908 1506 b800 6753 b800
+    0x00003a0: 6b57 b1                                
+  Stackmap Table:
+    same_frame(@57)
+    same_frame(@68)
+    same_locals_1_stack_item_extended(@145,Object[#126])
+    full_frame(@146,{Object[#2],Object[#111],Float,Float,Object[#116],Object[#314],Integer},{Object[#126],Integer})
+    same_frame(@149)
+    full_frame(@266,{Object[#2],Object[#111],Float,Float,Object[#116],Object[#314],Integer,Float,Float,Float,Object[#111],Float},{})
+    same_frame(@278)
+    same_frame(@306)
+    chop_frame(@313,2)
+    append_frame(@388,Float)
+    append_frame(@499,Float,Float,Float)
+    same_frame(@509)
+    same_frame_extended(@586)
+    append_frame(@624,Integer,Object[#288],Integer)
+    same_locals_1_stack_item_frame(@625,Integer)
+    full_frame(@691,{Object[#2],Object[#111],Float,Float,Object[#116],Object[#314],Integer,Float,Float,Float,Float,Float,Float,Float,Integer,Object[#288],Integer,Integer,Integer,Object[#413],Object[#415],Float},{})
+    same_frame(@700)
+    same_frame(@719)
+    full_frame(@753,{Object[#2],Object[#111],Float,Float,Object[#116],Object[#314],Integer,Float,Float,Float,Float,Float,Float,Float,Integer,Object[#288],Integer,Integer,Integer,Object[#413],Object[#415],Float,Integer},{Object[#126],Object[#116],Object[#415],Integer,Integer,Float,Float,Float})
+    full_frame(@754,{Object[#2],Object[#111],Float,Float,Object[#116],Object[#314],Integer,Float,Float,Float,Float,Float,Float,Float,Integer,Object[#288],Integer,Integer,Integer,Object[#413],Object[#415],Float,Integer},{Object[#126],Object[#116],Object[#415],Integer,Integer,Float,Float,Float,Float})
+    chop_frame(@768,3)
+    append_frame(@786,Object[#356])
+    chop_frame(@834,1)
+    same_frame(@847)
+    same_frame(@858)
+    same_frame_extended(@930)
+
+	at net.minecraft.client.renderer.entity.EntityRendererManager.func_229097_a_(EntityRendererManager.java:103) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.renderer.entity.EntityRendererManager.<init>(EntityRendererManager.java:216) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:452) [?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:149) [?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) [forge-1.16.3-34.1.42.jar:34.1] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$446/13643661.call(Unknown Source) [forge-1.16.3-34.1.42.jar:34.1] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.renderer.entity.EntityRendererManager.func_229097_a_(EntityRendererManager.java:103) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.renderer.entity.EntityRendererManager.<init>(EntityRendererManager.java:216) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:452) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:149) [?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) [forge-1.16.3-34.1.42.jar:34.1] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$446/13643661.call(Unknown Source) [forge-1.16.3-34.1.42.jar:34.1] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.3
+	Minecraft Version ID: 1.16.3
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1113465000 bytes (1061 MB) / 2147483648 bytes (2048 MB) up to 2147483648 bytes (2048 MB)
+	CPUs: 4
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	ModLauncher: 8.0.6+85+master.325de55
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.3-34.1.42.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.3-34.1.42.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.3-34.1.42.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.3-34.1.42.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/OptiFine_1.16.3_HD_U_G5.jar OptiFine TRANSFORMATIONSERVICE 
+		/forge-1.16.3-34.1.42.jar fml TRANSFORMATIONSERVICE 
+	FML: 34.1
+	Forge: net.minecraftforge:34.1.42
+	FML Language Providers: 
+		javafml@34.1
+		minecraft@1
+	Mod List: 
+		forge-1.16.3-34.1.42-client.jar                   |Minecraft                     |minecraft                     |1.16.3              |COMMON_SET|NOSIGNATURE
+		obfuscate-0.5.0-mc1.16.3.jar                      |Obfuscate                     |obfuscate                     |0.5.0               |COMMON_SET|e1:59:1a:56:ec:97:b3:d0:b3:4b:25:06:1f:83:b0:f4:fd:0c:24:e3:6d:ea:94:b1:9f:22:b0:38:13:60:88:ea
+		forge-1.16.3-34.1.42-universal.jar                |Forge                         |forge                         |34.1.42             |COMMON_SET|22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		worldedit-forge-mc1.16.3-7.2.0-dist.jar           |WorldEdit                     |worldedit                     |7.2.0+a51fa43       |COMMON_SET|NOSIGNATURE
+		cfm-7.0.0-pre19-mc1.16.3.jar                      |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre19         |COMMON_SET|NOSIGNATURE
+		vehicle-0.45.1-mc1.16.3.jar                       |MrCrayfish's Vehicle Mod      |vehicle                       |0.45.1              |COMMON_SET|NOSIGNATURE
+	Crash Report UUID: 8bc55d45-7a00-416b-b052-7a467eb49eb5
+	Launched Version: 1.16.3-forge-34.1.42
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: GeForce GTX 570/PCIe/SSE2 GL version 4.6.0 NVIDIA 391.35, NVIDIA Corporation
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 4x AMD Phenom(tm) II X4 B55 Processor
+	OptiFine Version: OptiFine_1.16.3_HD_U_G5
+	OptiFine Build: 20201106-202857
+	Render Distance Chunks: 12
+	Mipmaps: 2
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: (internal)
+	OpenGlVersion: 4.6.0 NVIDIA 391.35
+	OpenGlRenderer: GeForce GTX 570/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 4
